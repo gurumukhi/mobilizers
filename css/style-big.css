@@ -1,0 +1,69 @@
+li{
+ display: inline;
+ padding: 50px 20px 20px 10px;
+}
+
+#block1{
+	height:300px;
+	padding-top: 40px;
+	padding-left: 5%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:800;
+	background:url('../images/bus.png') no-repeat right center;
+}
+
+#hop{
+	overflow:visible;
+	margin-top:-10px;
+	font-size:43px;
+	font-weight:800;
+}
+
+#block2{
+	height:410px;
+ 	color:white;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:800;
+	background:#E36124 url('../images/fox.png') no-repeat right bottom;
+}
+
+.paraText{
+	font-style: italic;
+	font-family: georgia;
+	font-weight:normal;
+	font-size: 12px !important;
+}
+
+#block3{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;
+	padding-top: 20px;
+	background-color:#E36124;
+	color:white;
+	border-top: 2px solid white;
+	line-height: 30px;
+}
+
+#block4{
+	height:100px;
+	font-family: 'georgia';
+	font-style: italic;
+	font-weight:normal;
+	text-align:center;
+	background-color:white;
+	padding-top: 20px;
+	background-color:#E36124;
+	color:white;
+	border-top: 2px solid white;
+}
+
+
+.orangeBackground{
+	background:#E36124;
+	}
+#socialBlock > div, #flickrBlock > div{
+	padding:10px 0;
+}
+.twitter-timeline{
+	margin-left:10px;
+}

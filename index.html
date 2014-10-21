@@ -9,21 +9,25 @@
 
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,800' rel='stylesheet' type='text/css'>
 
-    <link rel="stylesheet" href="css/style.css" media="screen and (min-width:700px)">
+	<link rel="stylesheet" href="css/style-common.css">
+    <link rel="stylesheet" href="css/style-big.css" media="screen and (min-width:700px)">
     <link rel="stylesheet" href="css/style-tiny.css" media="screen and (max-width:700px)">
 
   </head>
 
-  <body>
-<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/fb_LT/sdk.js#xfbml=1&appId=1375882169365765&version=v2.0";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
-  <div class="container">
+  <body  onload="initialize();">
+  	<div class="container">
+		<div id="fb-root"></div>
+			<script>
+				(function(d, s, id) {
+				  var js, fjs = d.getElementsByTagName(s)[0];
+				  if (d.getElementById(id)) return;
+				  js = d.createElement(s); js.id = id;
+				  js.src = "//connect.facebook.net/fb_LT/sdk.js#xfbml=1&appId=1375882169365765&version=v2.0";
+				  fjs.parentNode.insertBefore(js, fjs);
+				}(document, 'script', 'facebook-jssdk'));
+			</script>
+  	<div class="container">
   		<div class="row">
   		  <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
   			<div id="block0">
@@ -77,26 +81,57 @@
 			</div>
   		</div>
   	  </div>
-	  <div class="row" id="flickrBlock">
+
+	  <div class="row" id="flickrBlock" style="display:none;">
 		<div class="col-md-8 col-lg-offset-2 orangeBackground">
 			<div style='position: relative; padding-bottom: 76%; height: 0; overflow: hidden;'><iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=75&size=big&setId=72157648799765186&thumbnails=0&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0'style='width:100%; height:100%; position: absolute; top:0; left:0;' ></iframe></div>
 		</div>
-		</div>
+	 </div>
+
 	  <div class="row" id="socialBlock">
 		<div class="col-md-8 col-md-offset-2 orangeBackground">
 			<div class="row">
 			<div class="col-md-6">
 				<a class="twitter-timeline"  href="https://twitter.com/FirefoxOSBus" data-widget-id="524261175056289792">Tweets by @FirefoxOSBus</a>
 				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			  
 			</div>
-			<div class="col-md-5 orangeBackground">
-			<div class="fb-like-box" style="background:#fff;border-radius:5px;-webkit-border-radius:5px;" data-href="https://www.facebook.com/mozillaindia" data-colorscheme="light" data-width="350" data-height="400" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>	
+
+			<div class="col-md-5 orangeBackground" style="display:none;">
+			<div class="fb-like-box" style="height:400px;background:#fff;border-radius:5px;-webkit-border-radius:5px;" data-href="https://www.facebook.com/mozillaindia" data-colorscheme="light" data-width="350" data-height="400" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>	
 			</div>
 			
 			</div>
 		</div>
   	</div>	
+
+	 <div class="row">
+	    <a name="tracking"></a>
+  	  	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="block2-2">
+  	  		<div class="col-lg-12" id="tracking">
+  	  			<br>
+  	  			Bus Tracking
+  	  			<br><br>
+  	  		</div>
+  	  		<div class="row">
+	  	  		<div class="col-lg-12 map-div">
+	  	  			<div id="map-canvas"></div>
+	  	  		</div>
+  	  		</div>
+  	  	</div>
+  	  </div>
+
+	  <div class="row" style="display:none">
+	    <a name="tracking"></a>
+  	  	<div class="row">
+	  	    <div class="col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 tracking-title">
+	  	  		BUS LIVE TRACKING	
+	  	  	</div>
+  	  	</div>
+  	  	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="block_map">
+			<div id="map-canvas" style="margin:0 0 0 0; padding:0 0 0 0; height: 350px;"></div>
+  	   </div>
+  	 </div>
+
   	  <div class="row">
 	    <a name="schedule"></a>
   	  	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="block3">
@@ -124,7 +159,63 @@
 					27/10/2014 &nbsp&nbsp&nbsp  Hydrabad<br/><br/><br/>
 	  	  		</div>
   	  		</div>
-  	  		
+  	  	</div>
+  	  </div>
+
+  	  <div class="row">
+	    <a name="team"></a>
+  	  	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 team" id="block3">
+  	  		<div class="col-md-9 col-md-offset-1" id="schedule">
+  	  			<br>
+  	  			THE TEAM
+  	  			<br><br>
+  	  		</div>
+  	  		<div class="row">
+	  	  		<div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-1 col-xs-9">
+	  	  			<a href="https://www.facebook.com/Vineel.reddy.pindi" target="blank">
+	  	  			 Vineel Reddy Pindi 
+	  	  			</a> 
+	  	  			<br/>
+
+	  	  			<a href="https://www.facebook.com/vikas.burri" target="blank">
+	  	  			 Vikas Reddy Burri
+	  	  			</a>
+	  	  			<br/>
+	  	  			
+	  	  			<a href="https://www.facebook.com/abidaboobaker" target="blank">
+	  	  			 Abid Aboobaker
+	  	  			</a>
+	  	  			<br/>
+	  	  			
+	  	  			<a href="https://www.facebook.com/sumantro.rijndael" target="blank">
+	  	  			 Sumantro Rijndael Mukherjee
+	  	  			</a>
+	  	  			<br/>
+	  	  		</div>
+
+	  	  		<div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-1 col-xs-9">
+	  	  			<a href="https://www.facebook.com/dipesh.monga" target="blank">
+	  	  			Dipesh Monga
+	  	  			</a>
+	  	  			<br/>
+
+	  	  			<a href="https://www.facebook.com/akshaytwr" target="blank">
+	  	  			 Akshay Tiwari
+	  	  			</a>
+	  	  			<br/>
+	  	  			
+	  	  			<a href="https://www.facebook.com/sreemegha.guha" target="blank">
+	  	  			 Sreemegha Guha
+	  	  			</a>
+	  	  			<br/>
+	  	  			
+	  	  			<a href="https://www.facebook.com/Mr.Imperfect.MJ" target="_blank">
+	  	  			 Mrinal Jain
+	  	  			</a>
+	  	  			<br/>
+	  	  			<br/><br/>
+	  	  		</div>
+  	  		</div>
   	  	</div>
   	  </div>
 		
@@ -139,6 +230,123 @@
   	</div>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+     <script type="text/javascript"
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqFZ8yqA6U_UDMdc3zw4hGwHKrezK4NyQ&sensor=false">
+	</script>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.js"></script>
+	
+	<script type="text/javascript">
+		var geocoder;
+		var map;
+		var a,b;
+		var markersArray = [];
+		var info_window = new google.maps.InfoWindow({content: ''});
+
+		function add_marker(racer_id, point, note) {
+			var marker = new google.maps.Marker({map: map, position: point, clickable: true});
+			marker.note = note;
+			google.maps.event.addListener(marker, 'click', function() {
+				info_window.content = marker.note;
+				info_window.open(map, marker);
+			});
+			return marker;
+		}
+
+		function initialize() {
+			i=0;
+			infoArray[i].lng = 0;
+			infoArray[i].lat = 0;
+			infoArray[i].cityName = "city0";
+			infoArray[i].datetime = "10/11";
+			i++;
+
+			infoArray[i].lng = 11;
+			infoArray[i].lat = 12;
+			infoArray[i].cityName = "city1";
+			infoArray[i].datetime = "10/11";
+
+			for(var j=0;j<i; j++){
+				marker = add_marker(0,new google.maps.LatLng(infoArray[j].lat,infoArray[j].lng),
+				'<b>Magnitude: </b> ' + infoArray[i].cityName + ' <br>' +
+				'<b>datetime: </b> ' + infoArray[i].datetime + ' <br>');
+				markersArray.push(marker);	
+			}
+			
+			geocoder = new google.maps.Geocoder();
+			var latlng = new google.maps.LatLng(-34.397, 150.644);
+			var mapOptions = {
+				zoom: 2,
+				center: latlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+			google.maps.Map.prototype.clearOverlays = function() {
+				if (markersArray) {
+					for (i in markersArray) {
+						markersArray[i].setMap(null);
+					}
+					markersArray.length = 0;
+				}
+			}
+			ajaxfun(0,0);
+		}
+
+		function ajaxCallSucceed(response) {
+			var i=0;
+			if(markersArray.length > 0){
+				markersArray.length=0;
+				map.clearOverlays();
+			}
+			map.setCenter(new google.maps.LatLng(infoArray[0].lat,infoArray[0].lng));
+			marker = add_marker(0,new google.maps.LatLng(infoArray[i].lat,infoArray[i].lng),
+			'<b>Latitude: </b> ' + infoArray[i].lat + ' <br>' +
+			'<b>Longitude: </b> ' + infoArray[i].lng + ' <br>' +
+			'<b>Magnitude: </b> ' + infoArray[i].magnitude + ' <br>' +
+			'<b>datetime: </b> ' + infoArray[i].datetime + ' <br>' +
+			'<b>depth: </b> ' + infoArray[i].depth + ' <br>');
+			markersArray.push(marker);
+			i=1;
+			while(infoArray[i].lng){
+				marker = add_marker(0,new google.maps.LatLng(infoArray[i].lat,infoArray[i].lng),
+				'<b>Latitude: </b> ' + infoArray[i].lat + ' <br>' +
+				'<b>Longitude: </b> ' + infoArray[i].lng + ' <br>' +
+				'<b>Magnitude: </b> ' + infoArray[i].magnitude + ' <br>' +
+				'<b>datetime: </b> ' + infoArray[i].datetime + ' <br>' +
+				'<b>depth: </b> ' + infoArray[i].depth + ' <br>');
+				markersArray.push(marker);
+				i++;
+			}
+		}
+
+		function ajaxCallFailed(error) {
+			log.message("Falied..");
+		}
+
+		function ajaxfun(a,b){
+			var q = "http://api.geonames.org/earthquakesJSON?north=-200&south=200&east=200&west=-170&username=gurumukhi&date=2012-08-01&callback=?";
+			$.ajax({
+				type: "POST",
+				data: "{'prefix':''}",
+				url: q,
+				contentType: "application/json; charset=utf-8",
+				dataType: "json",
+				success: ajaxCallSucceed,
+				failure: ajaxCallFailed
+			});
+		}
+
+		function codeAddress() {
+			var address = document.getElementById("address").value;
+			geocoder.geocode( { 'address': address}, function(results, status) {
+				if (status == google.maps.GeocoderStatus.OK) {
+					ajaxfun(results[0].geometry.location.lng(),results[0].geometry.location.lat());
+				} else {
+					console.log("Geocode was not successful for the following reason: " + status);
+				}
+			});
+		}
+	</script>
   </body>
 
 </html>

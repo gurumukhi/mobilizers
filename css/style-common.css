@@ -1,0 +1,100 @@
+body{
+	padding:0 0 0 0;
+}
+
+#block0{
+	height:100px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:800;
+	background-color:white;
+}
+
+ul{
+	text-align:right;
+	padding-top:50px;
+	margin: 0px 0px 70px 0px;
+	color: #E36124;
+	font-weight:750;
+}
+
+.orange{
+	color: #E36124;
+}	
+
+#title2{
+	font-weight: normal;
+	font-style: italic;
+	font-family: georgia;
+	color:gray;
+	text-decoration:italic;
+}
+
+a{
+	color:#E36124;
+}
+
+a:hover{
+	color:#E36124;
+}
+
+.paraHead{
+	margin-top:50px;
+	margin-bottom:20px;
+	font-size:18px;
+	font-weight:bold;
+	font-style: none  !important;	
+}
+
+#schedule{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+
+#block2-2{
+	font-family: 'Open Sans', sans-serif;
+	font-weight:700;	
+	border-top: 2px solid white;
+	line-height: 30px;
+	color:white;
+	background-color: gray;
+}
+
+
+#block4{
+	height:100px;
+	font-family: 'georgia';
+	font-style: italic;
+	font-weight:normal;
+	text-align:center;
+	background-color:white;
+	padding-top: 20px;
+	background-color:#E36124;
+	color:white;
+	border-top: 2px solid white;
+}
+
+.team a{
+	color:white;
+}
+
+#tracking{
+	font-size: 30px;
+	font-weight: bold;
+	color:white;
+	background-color: gray;
+	padding: 0 0 0 0;
+	margin: 0 15 0 15;
+}
+
+.map-div{
+	margin:0 0 0 0; 
+	padding:0 0 0 0;
+}
+
+#map-canvas{
+	margin:0 0 0 0;
+	position: inherit;
+	padding:0 0 0 0;
+	height:350px;	
+}
