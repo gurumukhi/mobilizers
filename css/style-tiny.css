@@ -1,22 +1,12 @@
-div{
-
-}
-
 body{
 	padding:0 0 0 0;
 }
-
-.container{
-	
-}
-
 #block0{
 	height:100px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:800;
 	background-color:white;
 }
-
 ul{
 	text-align: right;
 	padding-top:50px;
@@ -24,12 +14,10 @@ ul{
 	color: #E36124;
 	font-weight:750;
 }
-
 li{
  display: inline;
  padding: 50px 5px 20px 5px;
 }
-
 .canhide{
 	display:none;
 }
@@ -124,4 +112,23 @@ a{
 	background-color:#E36124;
 	color:white;
 	border-top: 2px solid white;
+}
+.orangeBackground{
+	background:#E36124;
+	}
+#socialBlock > div, #flickrBlock > div{
+	padding:10px 0;
+}
+#socialBlock{
+	text-align:center;
+}
+.twitter-timeline{
+	margin:5%;
+	width:90%;
+}
+.fb-like-box , .fb-like-box *,.twitter-timeline ,.twitter-timeline *{
+	max-width:280px!important;
+}
+#block0 ul{
+	padding-left:10px;
 }
