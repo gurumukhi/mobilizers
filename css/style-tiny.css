@@ -83,13 +83,14 @@ li{
 #socialBlock{
 	text-align:center;
 }
-.twitter-timeline{
-	margin:5%;
-	width:90%;
-}
 .fb-like-box , .fb-like-box *,.twitter-timeline ,.twitter-timeline *{
 	max-width:280px!important;
 }
 #block0 ul{
 	padding-left:10px;
 }
+.team{
+text-align:center;
+}
+.team a{
+display:block;margin:0px;}
