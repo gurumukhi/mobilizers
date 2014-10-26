@@ -12,10 +12,9 @@
 	<link rel="stylesheet" href="css/style-common.css">
     <link rel="stylesheet" href="css/style-big.css" media="screen and (min-width:700px)">
     <link rel="stylesheet" href="css/style-tiny.css" media="screen and (max-width:700px)">
-
   </head>
 
-  <body  onload="initialize();">
+  <body>
   	<div class="container">
 		<div id="fb-root"></div>
 			<script>
@@ -35,9 +34,9 @@
 				  <li> <a href="#home">HOME</a> </li>
 				  <li> <a href="#about"> ABOUT</a> </li>
 				  <li> <a href="#socialBlock"> SOCIAL</a> </li>
-				  <li class="canhide"> <a href="#"> BUS TRACK</a> </li>
+				  <li class="canhide"> <a href="#tracking"> BUS TRACK</a> </li>
 				  <li> <a href="#schedule"> SCHEDULE</a> </li>
-				  <li class="canhide"> <a href="#"> THE TEAM</a> </li>
+				  <li class="canhide"> <a href="#team"> THE TEAM</a> </li>
 			  </ul>
 		   </div>
 
@@ -82,55 +81,29 @@
   		</div>
   	  </div>
 
-	  <div class="row" id="flickrBlock">
-		<div class="col-md-8 col-lg-offset-2 orangeBackground">
-			<iframe align="center" src="https://www.flickr.com/photos/galaxyk/sets/72157648799765186/player" frameBorder="0" style="width:100%;height:500px;" scrolling="no"></iframe>
-		</div>
-	 </div>
-
 	  <div class="row" id="socialBlock">
-		<div class="col-md-8 col-md-offset-2 orangeBackground">
+		 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12" style="padding-bottom:0px;">
+		 	<div class="row">
+			 	<div class="col-sm-6 col-xs-12 flt-right aln-right">
+						<h1 id="hop" class="orange">
+							Social Box
+						</h1>
+						 <div class="brdr twr" style="text-align:center;">
+							<a class="twitter-timeline"  href="https://twitter.com/FirefoxOSBus" data-widget-id="524261175056289792">	Tweets by @FirefoxOSBus</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					 </div>
+				</div>
+				<div class="col-sm-5 col-xs-12 fcb" style="padding:5 5 5 5;">
+					<div class="fb-like-box brdr" style="height:450px;background:#fff;border-radius:5px;-webkit-border-radius:5px;" data-href="https://www.facebook.com/mozillaindia" data-colorscheme="light" data-width="350" data-height="450" data-show-faces="false" data-header="false" data-stream="true" data-show-border="true"></div>	
+				</div>
+			</div>
 			<div class="row">
-			<div class="col-md-6">
-				<a class="twitter-timeline"  href="https://twitter.com/FirefoxOSBus" data-widget-id="524261175056289792">Tweets by @FirefoxOSBus</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				<div class="col-md-12">
+						<iframe align="center" src="https://www.flickr.com/photos/galaxyk/sets/72157648799765186/player" frameBorder="0" style=" margin-top:30px; width:100%; height:500px;" scrolling="no"></iframe>
+				 </div>
 			</div>
-
-			<div class="col-md-5" >
-			<div class="fb-like-box" style="height:400px;background:#fff;border-radius:5px;-webkit-border-radius:5px;" data-href="https://www.facebook.com/mozillaindia" data-colorscheme="light" data-width="350" data-height="400" data-show-faces="false" data-header="false" data-stream="true" data-show-border="false"></div>	
-			</div>
-			
-			</div>
+		 </div>
 		</div>
-  	</div>	
-
-	 <div class="row">
-	    <a name="tracking"></a>
-  	  	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="block2-2">
-  	  		<div class="col-lg-12" id="tracking">
-  	  			<br>
-  	  			Bus Tracking
-  	  			<br><br>
-  	  		</div>
-  	  		<div class="row">
-	  	  		<div class="col-lg-12 map-div">
-	  	  			<div id="map-canvas"></div>
-	  	  		</div>
-  	  		</div>
-  	  	</div>
-  	  </div>
-
-	  <div class="row" style="display:none">
-	    <a name="tracking"></a>
-  	  	<div class="row">
-	  	    <div class="col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 tracking-title">
-	  	  		BUS LIVE TRACKING	
-	  	  	</div>
-  	  	</div>
-  	  	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" id="block_map">
-			<div id="map-canvas" style="margin:0 0 0 0; padding:0 0 0 0; height: 350px;"></div>
-  	   </div>
-  	 </div>
 
   	  <div class="row">
 	    <a name="schedule"></a>
@@ -142,18 +115,18 @@
   	  		</div>
   	  		<div class="row">
 	  	  		<div class="col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-1 col-xs-9">
-	  	  			16/10/2014  &nbsp&nbsp&nbsp Chennai - Vellore <br/>
-					17/10/2014 &nbsp&nbsp&nbsp  Kochi <br/>
-					18/10/2014  &nbsp&nbsp&nbsp Kozhikode <br/>
-					19/10/2014 &nbsp&nbsp&nbsp  Bangalore <br/>
-					20/10/2014  &nbsp&nbsp&nbsp Goa <br/>
-					21/10/2014 &nbsp&nbsp&nbsp  Pune - Mumbai<br/><br/>
+	  	  			16/10/2014  &nbsp&nbsp&nbsp  Chennai - Vellore <br/>
+					17/10/2014  &nbsp&nbsp&nbsp  Kochi <br/>
+					18/10/2014  &nbsp&nbsp&nbsp  Kozhikode <br/>
+					19/10/2014  &nbsp&nbsp&nbsp  Bangalore <br/>
+					20/10/2014  &nbsp&nbsp&nbsp  Goa <br/>
+					21/10/2014  &nbsp&nbsp&nbsp  Pune - Mumbai<br/><br/>
 	  	  		</div>
 
 	  	  		<div class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-1 col-xs-9">
 	  	  			22/10/2014 &nbsp&nbsp&nbsp  Nashik<br/>
 					23/10/2014 &nbsp&nbsp&nbsp  Indore<br/>
-					24/10/2014 &nbsp&nbsp&nbsp Jaipur<br/>
+					24/10/2014 &nbsp&nbsp&nbsp  Jaipur<br/>
 					25/10/2014 &nbsp&nbsp&nbsp  Delhi<br/>
 					26/10/2014 &nbsp&nbsp&nbsp  Nagpur<br/>
 					27/10/2014 &nbsp&nbsp&nbsp  Hydrabad<br/><br/><br/>
@@ -162,16 +135,16 @@
   	  	</div>
   	  </div>
 
-  	  <div class="row">
-	    <a name="team"></a>
+  	  <div class="row">	    
   	  	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 team" id="block3">
+  	  		<a name="team"></a>
   	  		<div class="col-md-9 col-md-offset-1" id="schedule">
   	  			<br>
   	  			THE TEAM
-  	  			<br><br>
+  	  			<h3>MOBIZERS CREW<h3>
   	  		</div>
   	  		<div class="row">
-	  	  		<div class="col-md-5 col-md-offset-1 col-sm-12 col-xs-12">
+	  	  		<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-11 col-xs-offset-1">
 	  	  			<div class="sprite" style="background-position:-373px 0"></div>
 					<a href="https://www.facebook.com/Vineel.reddy.pindi" target="blank">
 	  	  			 Vineel Reddy Pindi 
@@ -194,7 +167,7 @@
 	  	  			<br/>
 	  	  		</div>
 
-	  	  		<div class="col-md-6 col-sm-12 col-xs-12">
+	  	  		<div class="col-lg-5 col-md-6 col-sm-5 col-xs-11 col-xs-offset-1">
 					<div class="sprite" style="background-position:-160px 0"></div>
 	  	  			<a href="https://www.facebook.com/dipesh.monga" target="blank">
 	  	  			Dipesh Monga
@@ -215,7 +188,51 @@
 	  	  			 Mrinal Jain
 	  	  			</a>
 	  	  			<br/>
-	  	  			<br/><br/>
+	  	  			<br/>
+	  	  		</div>
+  	  		</div>
+
+  	  		<div class="col-md-9 col-md-offset-1" id="schedule">
+  	  			<h3>Social Media & Design Team<h3>
+  	  		</div>
+  	  		<div class="row">
+	  	  		<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-11 col-xs-offset-1">
+	  	  			<div class="sprite" style="background-image:url('images/jafar.jpg') !important"></div>
+					<a href="https://www.facebook.com/pmjcreations" target="blank">
+	  	  			 Jafar Muhammed
+	  	  			</a> 
+	  	  			<br/>
+	  	  		</div>
+
+	  	  		<div class="col-lg-5 col-md-6 col-sm-5 col-xs-11 col-xs-offset-1">
+					<div class="sprite" style="background-position:-110px 0"></div>
+	  	  			<a href="https://www.facebook.com/abidaboobaker" target="blank">
+	  	  			Abid Aboobaker
+	  	  			</a>
+	  	  			<br/>
+	  	  			<br/>
+	  	  		</div>
+  	  		</div>
+
+  	  		<div class="col-md-9 col-md-offset-1" id="schedule">
+  	  			<h3>Website Development Team<h3>
+  	  		</div>
+  	  		<div class="row">
+	  	  		<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-11 col-xs-offset-1">
+	  	  			<div class="sprite" style="background-image:url('images/ram.jpg') !important"></div>
+					<a href="https://www.facebook.com/ram.gurumukhi" target="blank">
+	  	  			 Ram Dayal Vaishnav
+	  	  			</a> 
+	  	  			<br/>
+	  	  		</div>
+
+	  	  		<div class="col-lg-5 col-lg-offset-1 col-md-6 col-sm-5 col-xs-11 col-xs-offset-1">
+					<div class="sprite" style="background-image:url('images/trishul.jpg') !important"></div>
+	  	  			<a href="https://www.facebook.com/tsl143" target="blank">
+	  	  			Trishul Goel
+	  	  			</a>
+	  	  			<br/>
+	  	  			<br/>
 	  	  		</div>
   	  		</div>
   	  	</div>
@@ -238,116 +255,16 @@
 	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.js"></script>
 	
-	<script type="text/javascript">
-		var geocoder;
-		var map;
-		var a,b;
-		var markersArray = [];
-		var info_window = new google.maps.InfoWindow({content: ''});
+	<script type="text/javascript" src="js/maps.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		function add_marker(racer_id, point, note) {
-			var marker = new google.maps.Marker({map: map, position: point, clickable: true});
-			marker.note = note;
-			google.maps.event.addListener(marker, 'click', function() {
-				info_window.content = marker.note;
-				info_window.open(map, marker);
-			});
-			return marker;
-		}
+	  ga('create', 'UA-56107478-1', 'auto');
+	  ga('send', 'pageview');
 
-		function initialize() {
-			i=0;
-			infoArray[i].lng = 0;
-			infoArray[i].lat = 0;
-			infoArray[i].cityName = "city0";
-			infoArray[i].datetime = "10/11";
-			i++;
-
-			infoArray[i].lng = 11;
-			infoArray[i].lat = 12;
-			infoArray[i].cityName = "city1";
-			infoArray[i].datetime = "10/11";
-
-			for(var j=0;j<i; j++){
-				marker = add_marker(0,new google.maps.LatLng(infoArray[j].lat,infoArray[j].lng),
-				'<b>Magnitude: </b> ' + infoArray[i].cityName + ' <br>' +
-				'<b>datetime: </b> ' + infoArray[i].datetime + ' <br>');
-				markersArray.push(marker);	
-			}
-			
-			geocoder = new google.maps.Geocoder();
-			var latlng = new google.maps.LatLng(-34.397, 150.644);
-			var mapOptions = {
-				zoom: 2,
-				center: latlng,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			}
-			map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
-			google.maps.Map.prototype.clearOverlays = function() {
-				if (markersArray) {
-					for (i in markersArray) {
-						markersArray[i].setMap(null);
-					}
-					markersArray.length = 0;
-				}
-			}
-			ajaxfun(0,0);
-		}
-
-		function ajaxCallSucceed(response) {
-			var i=0;
-			if(markersArray.length > 0){
-				markersArray.length=0;
-				map.clearOverlays();
-			}
-			map.setCenter(new google.maps.LatLng(infoArray[0].lat,infoArray[0].lng));
-			marker = add_marker(0,new google.maps.LatLng(infoArray[i].lat,infoArray[i].lng),
-			'<b>Latitude: </b> ' + infoArray[i].lat + ' <br>' +
-			'<b>Longitude: </b> ' + infoArray[i].lng + ' <br>' +
-			'<b>Magnitude: </b> ' + infoArray[i].magnitude + ' <br>' +
-			'<b>datetime: </b> ' + infoArray[i].datetime + ' <br>' +
-			'<b>depth: </b> ' + infoArray[i].depth + ' <br>');
-			markersArray.push(marker);
-			i=1;
-			while(infoArray[i].lng){
-				marker = add_marker(0,new google.maps.LatLng(infoArray[i].lat,infoArray[i].lng),
-				'<b>Latitude: </b> ' + infoArray[i].lat + ' <br>' +
-				'<b>Longitude: </b> ' + infoArray[i].lng + ' <br>' +
-				'<b>Magnitude: </b> ' + infoArray[i].magnitude + ' <br>' +
-				'<b>datetime: </b> ' + infoArray[i].datetime + ' <br>' +
-				'<b>depth: </b> ' + infoArray[i].depth + ' <br>');
-				markersArray.push(marker);
-				i++;
-			}
-		}
-
-		function ajaxCallFailed(error) {
-			log.message("Falied..");
-		}
-
-		function ajaxfun(a,b){
-			var q = "http://api.geonames.org/earthquakesJSON?north=-200&south=200&east=200&west=-170&username=gurumukhi&date=2012-08-01&callback=?";
-			$.ajax({
-				type: "POST",
-				data: "{'prefix':''}",
-				url: q,
-				contentType: "application/json; charset=utf-8",
-				dataType: "json",
-				success: ajaxCallSucceed,
-				failure: ajaxCallFailed
-			});
-		}
-
-		function codeAddress() {
-			var address = document.getElementById("address").value;
-			geocoder.geocode( { 'address': address}, function(results, status) {
-				if (status == google.maps.GeocoderStatus.OK) {
-					ajaxfun(results[0].geometry.location.lng(),results[0].geometry.location.lat());
-				} else {
-					console.log("Geocode was not successful for the following reason: " + status);
-				}
-			});
-		}
 	</script>
   </body>
 

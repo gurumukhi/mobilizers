@@ -1,7 +1,12 @@
+.container{
+	padding-left: 0px;
+	padding-right: 0px;
+}
 li{
  display: inline;
  padding: 50px 5px 20px 5px;
 }
+
 .canhide{
 	display:none;
 }
@@ -28,11 +33,14 @@ li{
 	width:100%;
 	font-family: 'Open Sans', sans-serif;
 	font-weight:800;
+	margin-left: 15px !important;
 }
 
 #special{
 	background:#E36124 url('../images/fox-small.png') no-repeat right center;
 	padding-bottom: 40px !important;
+	padding-right: 0px;
+	margin-right: 15px;
 }
 
 .paraText{
@@ -90,7 +98,20 @@ li{
 	padding-left:10px;
 }
 .team{
-text-align:center;
+	text-align:center;
+	padding-left: -20px;
 }
+
 .team a{
-display:block;margin:0px;}
+	display:block;
+	margin:0px;
+}
+
+#socialBlock{
+	margin-top:50px;
+	margin-right:0px;
+}
+
+.twr .fcb{
+	text-align: center !important;
+}

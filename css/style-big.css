@@ -57,13 +57,6 @@ li{
 	border-top: 2px solid white;
 }
 
-
-.orangeBackground{
-	background:#E36124;
-	}
-#socialBlock > div, #flickrBlock > div{
-	padding:10px 0;
-}
-.twitter-timeline{
-	margin-left:10px;
+.twr{
+	text-align: right;
 }
